@@ -1,5 +1,5 @@
-$fontcolor:  rgb(10%, 10%, 10%);
-$backgroundcolor: #00DDCF;
+$fontcolor:  white;
+$backgroundcolor: #1EEAC4;
 
 
 body {
@@ -10,6 +10,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  padding-right: 1em;
 }
 
 #search-bar {
@@ -25,7 +29,6 @@ body {
 
 #video-section {
   display: flex;
-
   li {
     list-style: none;
     cursor: pointer;
@@ -53,4 +56,18 @@ body {
     border-radius: 5px;
   }
 
+  #video-list-title {
+    padding: 1em;
+    color: darken($fontcolor, 10%);
+  }
+
+  #video-list {
+    margin: 1em;
+    border-radius: 5px;
+    background-color: darken($backgroundcolor, 10%);
+  }
+}
+#header {
+  display: flex;
+  flex-flow: row wrap;
 }

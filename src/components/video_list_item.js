@@ -6,7 +6,7 @@ const VideoListItem = (props) => {
   return (
     <li onClick={() => props.onVideoSelect(props.video)}>
       <img src={imgUrl} alt="video" />
-      <div>{props.video.snippet.title}</div>
+      <div id="video-list-title">{props.video.snippet.title}</div>
     </li>
     );
 };
