@@ -1,5 +1,5 @@
 $fontcolor:  rgb(10%, 10%, 10%);
-$backgroundcolor: rgb(98%, 98%, 98%);
+$backgroundcolor: #00DDCF;
 
 
 body {
@@ -7,8 +7,10 @@ body {
   color: $fontcolor;
   background-color: $backgroundcolor;
   margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 #search-bar {
   margin-bottom: 20px;
@@ -17,6 +19,7 @@ body {
     font-size: 1.5em;
     border-radius: .25em;
   }
+
 }
 
 
@@ -32,6 +35,22 @@ body {
   }
   li:hover {
     background: darken( $backgroundcolor, 10% );
+  }
+
+  #video_title {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+  }
+
+  #video_desc {
+    color: darken(white, 10%);
+  }
+
+  .video-detail {
+    background-color: darken($backgroundcolor, 30%);
+    padding: 1.5em;
+    border-radius: 5px;
   }
 
 }

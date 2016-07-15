@@ -24,7 +24,7 @@ class App extends Component {
   }
   search(text) {
     youtubeSearch(text).then(videos => {
-      this.search('pixar');
+      // this.search(text);
       this.setState({
         videos,
         selectedVideo: videos[0],
@@ -35,11 +35,10 @@ class App extends Component {
     return (
       <div>
         <SearchBar onSearchChange={text => this.search(text)} />
-        // <div id="video-section">
+        <div id="video-section">
           <VideoDetail video={this.state.selectedVideo} />
           <VideoList onVideoSelect={selectedVideo => this.setState({ selectedVideo })} videos={this.state.videos} />
-          // <VideoList videos={this.state.videos} />
-        // </div>
+        </div>
       </div>
     );
   }
